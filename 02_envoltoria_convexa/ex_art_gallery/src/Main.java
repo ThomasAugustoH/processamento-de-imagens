@@ -13,7 +13,7 @@ public class Main {
     }
 }
 
-class Coordinates implements Comparable<Coordinates>{
+class Coordinates implements Comparable<Coordinates> {
     private int x;
     private int y;
 
@@ -87,7 +87,7 @@ class ArtGallery {
                 cornersLeft = cornersCount;
             }
 
-                        if (cornersLeft == 0) {
+            if (cornersLeft == 0) {
                 boolean hasCriticalPoint = hasCriticalPoint();
                 if (hasCriticalPoint) {
                     System.out.println("Yes");
@@ -131,7 +131,7 @@ class ArtGallery {
                 boolean ccw = CCW(first, second, third);
 
                 if (ccw) {
-                    outerPoints.remove(outerPoints.size()-2);
+                    outerPoints.remove(outerPoints.size() - 2);
                 } else {
                     break;
                 }
@@ -141,7 +141,7 @@ class ArtGallery {
                 i--;
             } else {
                 i++;
-            }   
+            }
         }
 
         return outerPoints;
